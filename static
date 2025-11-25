@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>WinGo Predictor (Mobile)</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div id="app" class="wrap">
+    <header class="top">
+      <div class="title">🎰 WinGo Predictor</div>
+      <div class="subtitle">Mobile-first live predictions</div>
+    </header>
+
+    <main>
+      <section class="card" id="pendingCard">
+        <div class="serial" id="serial">Serial —</div>
+        <div class="predRow">
+          <div class="num" id="num">-</div>
+          <div class="meta">
+            <div id="size" class="badge">-</div>
+            <div id="numconf" class="small mono">NumConf -</div>
+            <div id="sizeconf" class="small mono">SizeConf -</div>
+          </div>
+        </div>
+        <div class="time small mono" id="predtime">—</div>
+      </section>
+
+      <section class="card mini" id="statsCard">
+        <div class="stat"><div class="val" id="total">0</div><div class="lbl">Total</div></div>
+        <div class="stat"><div class="val" id="correct_num">0</div><div class="lbl">Correct Num</div></div>
+        <div class="stat"><div class="val" id="correct_size">0</div><div class="lbl">Correct Size</div></div>
+      </section>
+
+      <section class="card" id="historyCard">
+        <div class="lbl">Recent results</div>
+        <div id="history" class="history mono">—</div>
+      </section>
+
+      <footer class="card small">
+        <div class="small">Refresh: <span id="lastupdate">—</span></div>
+      </footer>
+    </main>
+  </div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
